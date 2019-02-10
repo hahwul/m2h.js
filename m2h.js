@@ -35,3 +35,10 @@ function m2h(node, url) {
         zf.innerHTML = convert.makeHtml(a.responseText)
     });
 }
+
+function h2h(node, url) {
+    zf = document.getElementById(node);
+    var a = $.get(url, function() {
+        zf.innerHTML = a.responseText;
+    }); 
+}
